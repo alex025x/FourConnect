@@ -7,3 +7,7 @@ var board;
 
 var rows = 6;
 var columns = 7;
+
+window.onload = function () {
+    setGame();
+};
