@@ -42,3 +42,8 @@ function setGame() {
         board.push(row)
     }
 }
+
+function setPiece() {
+    if (gameOver) {
+        return;
+    }
