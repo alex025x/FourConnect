@@ -15,7 +15,7 @@ window.onload = function () {
 
 function setGame(rows, columns) {
     // Create an empty game board as a 2D array
-    let board: [];
+    board = [];
 
 
     // Loop to create rows
@@ -31,6 +31,11 @@ function setGame(rows, columns) {
             // Create an HTML element for the cell
             let title = document.createElement("div");
             title.id = r.toString() + "-" + c.toString();
+
+
+
+            title.classList.add("tile");
+            document.getElementById("board").append(tile);
 
         }
     }
