@@ -57,6 +57,7 @@ function setPiece() {
     if (board[r][c] === '') {
         board[r][c] = currentPlayer;
         let tile = document.getElementById(r.toString() + "-" + c.toString());
+        // If the cell is empty, set the player's piece and style it.
 
         if (currentPlayer === playerRed) {
             tile.classList.add("red-piece");
@@ -69,6 +70,25 @@ function setPiece() {
         
     }
 
-    r -= 1; 
+    r -= 1; //Update the row height for the column
     currColumns[c] = r; 
+
+    checkWinner();
+
 }
+
+function checkWinner() {
+    // horizontally
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns -3; c++) {
+            if (board[r][c] != '  ') {
+                if (board[r][c] == board[r][c + 1] && board[r][c + 1] == board[r][c + 2] && board[r][c + 2] == board[r][c + 3]) {
+                    setWinner(r, c);
+                    return;
+                }
+            }
+        }
+    }
+}
+
+
