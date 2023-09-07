@@ -35,6 +35,7 @@ function setGame() {
 
 
             tile.classList.add("tile");
+            tile.addEventListener("click", setPiece);
             document.getElementById("board").append(tile);
 
         }
