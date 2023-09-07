@@ -8,9 +8,9 @@ var board;
 var rows = 6;
 var columns = 7;
 
-window.onload = function() {
+window.onload = function () {
     setGame();
-}
+};
 
 
 function setGame() {
@@ -39,7 +39,7 @@ function setGame() {
             document.getElementById("board").append(tile);
 
         }
-        board.push(row)
+        board.push(row);
     }
 }
 
@@ -47,3 +47,7 @@ function setPiece() {
     if (gameOver) {
         return;
     }
+
+    let coords = this.id.split("-"); // split the string to return an array ["0"; "0"]
+    let r = parseInt(coords[0]);
+    let c = parseInt(coords[1]);
