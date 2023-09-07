@@ -11,7 +11,16 @@ body {
 
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
-    
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    /* Circle */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}

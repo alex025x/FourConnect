@@ -8,12 +8,12 @@ var board;
 var rows = 6;
 var columns = 7;
 
-window.onload = function () {
+window.onload = function() {
     setGame();
-};
+}
 
 
-function setGame(rows, columns) {
+function setGame() {
     // Create an empty game board as a 2D array
     board = [];
 
@@ -26,17 +26,18 @@ function setGame(rows, columns) {
         for (let c = 0; c < columns; c++) {
 
             // Initialize each cell with an empty value
-            row.push('');
+            row.push('  ');
 
             // Create an HTML element for the cell
-            let title = document.createElement("div");
-            title.id = r.toString() + "-" + c.toString();
+            let tile = document.createElement("div");
+            tile.id = r.toString() + "-" + c.toString();
 
 
 
-            title.classList.add("tile");
+            tile.classList.add("tile");
             document.getElementById("board").append(tile);
 
         }
+        board.push(row)
     }
 }
