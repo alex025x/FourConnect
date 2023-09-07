@@ -4,6 +4,7 @@ var currentPlayer = playerYellow;
 
 var gameOver = false;
 var board;
+var currColumns;
 
 var rows = 6;
 var columns = 7;
@@ -15,6 +16,7 @@ window.onload = function () {
 function setGame() {
     // Create an empty game board as a 2D array
     board = [];
+    currColumns = [5, 5, 5, 5, 5, 5, 5, ]
 
     // Loop to create rows
     for (let r = 0; r < rows; r++) {
@@ -45,6 +47,12 @@ function setPiece() {
     let r = parseInt(coords[0]);
     let c = parseInt(coords[1]);
 
+
+    r= currColumns[c];
+    if (r < 0) {
+        return;
+    }
+
     // Check if the cell is already occupied
     if (board[r][c] === '') {
         board[r][c] = currentPlayer;
@@ -60,4 +68,7 @@ function setPiece() {
 
         
     }
+
+    r -= 1; 
+    currColumns[c] = r; 
 }
