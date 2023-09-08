@@ -29,7 +29,7 @@ window.onload = function () {
 function setGame() {
     // Create an empty game board as a 2D array
     board = [];
-    currColumns = [5, 5, 5, 5, 5, 5, 5, ]
+    currColumns = [5, 5, 5, 5, 5, 5, 5, ];
 
     // Loop to create rows
     for (let r = 0; r < rows; r++) {

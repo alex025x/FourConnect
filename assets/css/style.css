@@ -1,10 +1,8 @@
-
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
 
 
 #board {
@@ -16,6 +14,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    
+    
 
 
 }
@@ -26,7 +26,7 @@ body {
     margin: 5px;
 
     /* Circle */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     border: 5px solid navy;
 }
@@ -128,4 +128,22 @@ body {
 .social-media a {
     margin: 0 10px;
     font-size: 30px;
+}
+
+
+@media (max-width: 768px) {
+    #board {
+        width: 80vmin;
+        height: 80vmin;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+    .tile {
+        height: 6vmin;
+        width: 6vmin;
+        margin: 4px;
+       
+    }
 }
