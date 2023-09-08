@@ -17,11 +17,14 @@ window.onload = function () {
     // Add event listener for restartButton
     document.getElementById("restartButton").addEventListener("click", restartGame);
 
+    // Add even listener for how to play button
     document.getElementById("helpButton").addEventListener("click", showHowToPlayModal);
 
-
-
+    // Add event listener for modal close button
+    document.querySelector(".modal .close").addEventListener("click", closeHowToPlayModal);
 };
+
+
 
 function setGame() {
     // Create an empty game board as a 2D array
@@ -155,3 +158,11 @@ function showHowToPlayModal() {
     modal.style.display = "block";
 }
 
+// Function to close modal
+function closeHowToPlayModal() {
+    // Get the modal element
+    var modal = document.getElementById("howToPlayModal");
+
+    // Hide the modal
+    modal.style.display = "none";
+}
