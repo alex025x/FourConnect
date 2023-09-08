@@ -117,3 +117,15 @@ body {
     cursor: pointer;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 10px;
+    
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 30px;
+}
