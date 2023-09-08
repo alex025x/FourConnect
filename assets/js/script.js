@@ -11,14 +11,15 @@ var columns = 7;
 
 
 
-
 window.onload = function () {
     setGame();
 
     // Add event listener for restartButton
     document.getElementById("restartButton").addEventListener("click", restartGame);
 
-    
+    document.getElementById("helpButton").addEventListener("click", showHowToPlayModal);
+
+
 
 };
 
@@ -146,5 +147,11 @@ function restartGame() {
     location.reload();
 }
 
+function showHowToPlayModal() {
+    // Get the modal element
+    var modal = document.getElementById("howToPlayModal");
 
+    // Show the modal
+    modal.style.display = "block";
+}
 
