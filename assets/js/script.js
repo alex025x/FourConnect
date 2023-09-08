@@ -11,6 +11,12 @@ var columns = 7;
 
 window.onload = function () {
     setGame();
+
+    // Add event listener for restartButton
+    document.getElementById("restartButton").addEventListener("click", restartGame);
+
+    
+
 };
 
 function setGame() {
@@ -131,4 +137,11 @@ function setWinner(r, c) {
     }
     gameOver = true;
 }
+
+function restartGame() {
+    // Reload the page to restart the game
+    location.reload();
+}
+
+
 

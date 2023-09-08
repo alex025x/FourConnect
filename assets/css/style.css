@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -12,6 +13,20 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+#restartButton {
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    background-color: grey;
 }
 
 .tile {
