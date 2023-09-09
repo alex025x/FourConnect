@@ -1,39 +1,46 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# FourConnect - Connect4 Game
 
-Welcome,
+**Overview:**
+FourConnect is a modern twist on the classic Connect 4 game, designed for players of all ages. This JavaScript-based game offers a convenient and enjoyable way to challenge your strategic thinking and have fun with friends or family. Whether you are a pro or a newcomer, FourConnect is here to entertain and sharpen your strategic skills. Currently, the game supports human-versus-human gameplay, offering the perfect oppurtunity for friendly competition.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### General features
 
-`python3 -m http.server`
+**How to Play Button**
+I have added a How to Play button, when this button is clicked on it opens up a pop-up explaining how the game works.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![Image of How To Play Button](README-images/howtoplaybutton.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+![Image of PopUp](README-images/howtoplaypopup.png)
 
-`http_server`
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**Restart Game Button**
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+There is also a button that restarts the game if the players wish to start a new round.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Image of Restart Button](README-images/restartbutton.png)
 
-To log into the Heroku toolbelt CLI:
+**Winner Display**
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The color of the player that wins the game appears over the game board.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Winner Display Message](README-images/displaywinner.png)
 
----
 
-Happy coding!
+
+### Features Left to Implement
+
+- Future updates could include a "play vs computer" mode.
+- A line that goes through the winning tiles.
+- Allow users to costumize their own tiles.
+- Allow users to switch to dark mode if they wish.
+
+
+## Testing
+
+The project has undergone extensive testing to ensure that all features work as intended. The game has been tested on various browsers and screen sizes to ensure responsiveness and compatibility.
+
+

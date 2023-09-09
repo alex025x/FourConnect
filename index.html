@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;700&display=swap">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>FourConnect</title>
+    <link rel="icon" href="assets/favicon/faviconc4.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 
 <body>
 
     <h1 aria-label="FourConnect - Connect Four Game">FourConnect</h1>
-    <h2 id="winner" aria-label="Game Winner"></h2>
+    <p id="winner" aria-label="Game Winner"></p>
 
 
-    <div id="board" role="grid" aria-labelledby="board-label" aria-label="Game Board"></div>
+    <div id="board" role="grid" aria-label="Game Board"></div>
 
     <button id="helpButton" aria-label="How to Play Button" aria-expanded="false" aria-controls="howToPlayModalContent">
         <i class="fa-solid fa-question" aria-hidden="true"></i>How to play
     </button>
 
-    <div id="howToPlayModal" class="modal" aria-hidden="true" aria-labelledby="howToPlayModalTitle"
+    <div id="howToPlayModal" class="modal" aria-hidden="true" aria-label="howToPlayModalTitle"
         aria-describedby="howToPlayModalContent">
         <div class="modal-content">
             <span class="close" aria-label="Close Modal" role="button" tabindex="0">&times;</span>

@@ -3,6 +3,7 @@ body {
     font-family: Kanit;
     font-size: 28px;
     text-align: center;
+    display: block;
 }
 
 
@@ -10,8 +11,8 @@ body {
 #board {
     height: 540px;
     width: 630px;
-    background-color: blue;
-    border: 10px solid navy;
+    background-color: rgb(12, 181, 223);
+    border: 10px solid rgb(2, 119, 187);
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
