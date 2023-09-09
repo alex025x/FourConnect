@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,59 +9,49 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>FourConnect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-
 </head>
 
 <body>
 
-    
-    <h1>FourConnect</h1>
-    <h2 id="winner"></h2>
-    <div id="board"></div>
-    
-    <button id="helpButton"><i class="fa-solid fa-question" ></i>How to play</button>
+    <h1 aria-label="FourConnect - Connect Four Game">FourConnect</h1>
+    <h2 id="winner" aria-label="Game Winner"></h2>
 
-    <div id="howToPlayModal" class="modal">
+
+    <div id="board" role="grid" aria-labelledby="board-label" aria-label="Game Board"></div>
+
+    <button id="helpButton" aria-label="How to Play Button" aria-expanded="false" aria-controls="howToPlayModalContent">
+        <i class="fa-solid fa-question" aria-hidden="true"></i>How to play
+    </button>
+
+    <div id="howToPlayModal" class="modal" aria-hidden="true" aria-labelledby="howToPlayModalTitle"
+        aria-describedby="howToPlayModalContent">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-            The goal of the game is to achieve a sequence of four of your own discs in a row, either horizontally, vertically, or
-            diagonally, while simultaneously preventing your opponent from achieving the same feat. 
-            This game currently supports only human-versus-human gameplay.
+            <span class="close" aria-label="Close Modal" role="button" tabindex="0">&times;</span>
+            <p id="howToPlayModalContent" aria-label="Game Instructions">
+                Achieve four consecutive discs in a row, either horizontally, vertically, or diagonally, to win. This
+                game is currently only human-versus-human gameplay for two players.
             </p>
         </div>
     </div>
-    
 
-
-    
-    
-    <button id="restartButton">
-        <i class="fa-solid fa-arrow-rotate-left" style="color: #ffffff"></i> Restart Game
+    <button id="restartButton" aria-label="Restart Game Button">
+        <i class="fa-solid fa-arrow-rotate-left" style="color: #ffffff" aria-hidden="true"></i> Restart Game
     </button>
 
-   
-
-
+    
     <footer>
-            <div class="social-media">
-               <a rel="noopener" target="_blank" href="https://github.com/alex025x/FourConnect"><i class="fa-brands fa-github" style="color: #000000"></i></a>
-                <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/alexander-lungu-368117245"><i class="fa-brands fa-linkedin" style="color: #000000"></i></a> 
-            </div>
+        <div class="social-media">
+            <a rel="noopener" target="_blank" href="https://github.com/alex025x/FourConnect" aria-label="GitHub Link">
+                <i class="fa-brands fa-github" style="color: #000000" aria-hidden="true"></i>
+            </a>
+            <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/alexander-lungu-368117245"
+                aria-label="LinkedIn Link">
+                <i class="fa-brands fa-linkedin" style="color: #000000" aria-hidden="true"></i>
+            </a>
+        </div>
     </footer>
-
-
-
-
-
-
-
 
     <script src="assets/js/script.js"></script>
 </body>
-
-
-
-
 
 </html>
