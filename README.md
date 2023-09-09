@@ -4,10 +4,6 @@
 
 FourConnect is a modern twist on the classic Connect 4 game, designed for players of all ages. This JavaScript-based game offers a convenient and enjoyable way to challenge your strategic thinking and have fun with friends or family. Whether you are a pro or a newcomer, FourConnect is here to entertain and sharpen your strategic skills. Currently, the game supports human-versus-human gameplay, offering the perfect oppurtunity for friendly competition.
 
-![Image of Site Responsiveness](README-images/siteresponse.png)
-
-
-
 ## Features
 
 ### General features
